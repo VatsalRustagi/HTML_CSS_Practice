@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<HTML>
+    <title>
+        My CSS Website
+    </title>
+    <head>
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav responsive" id="dropdownClick">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#About">About</a></li>
+                <li class="topnav-right"><a href="#Signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="#Signup">Sign In</a></li>
+                <li class="dropDownMenu"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <!--Column 1-->
+                <div class="col-6">
+                    <div class="leftSide-col">
+                        <h1 class="large"> Vatsal Rustagi </h1>
+                        <h1 class="large"> Front-End Developer </h1>
+                    </div>
+                    <form>
+                        <div class="leftSide-col">
+                            <h2> Username </h2>
+                            <input class="inputbox" type="text" placeholder="Username">
+                            <h2> Password </h2>
+                            <input class="inputbox" type="text" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <!--Column 2-->
+                <div class="col-6">
+                    <div class="rightSide-col">
+                        <a href="https://itunes.apple.com/us/app/whats-in-my-fridge/id1302712808?mt=8">
+                            <img src="cat-fridge-icon.png">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <header>
+            <h1 class="section2Header">My Awesome Apps</h1>
+        </header>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                        <img src="devIcon.png">
+                        </div>
+                        <label>Course-Plan</label>
+                        <p>I'm making this website to develop my CSS and HTML skills.</p>
+                    </div>    
+                </div>
+                
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                        <img src="devIcon.png">
+                        </div>
+                        <label>What's in my fridge</label>
+                        <p>I'm making this website to develop my CSS and HTML skills.</p>
+                    </div>    
+                </div>
+                
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                        <img src="devIcon.png">
+                        </div>
+                        <label>Rent Splitter</label>
+                        <p>I'm making this website to develop my CSS and HTML skills.</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="learnMore">Learn More</button>
+                </div>
+            
+            </div>
+        </div>
+        
+        <script>
+            function dropdownMenu(){
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav"){
+                    x.className += " responsive";
+                } else{
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</HTML>
